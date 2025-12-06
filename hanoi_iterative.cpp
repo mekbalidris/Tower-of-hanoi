@@ -7,9 +7,9 @@ using namespace std::chrono;
 
 int step_count = 0;
 
-void move_disk(char from, char to) {
-    step_count++;
-    cout << "Step " << step_count << ": Move disk from " << from << " to " << to << endl;
+void record_move(char from, char to) {
+    move_counter++;
+    cout << "Step " << move_counter << ": Move disk from " << from << " to " << to << endl;
 }
 
 void iterative_hanoi(int n) {
